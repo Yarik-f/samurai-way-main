@@ -11,22 +11,4 @@
   'n c';
 }
 
-.header{
-  grid-area: h;
-  background-color: rosybrown;
-}
-.nav{
-  background-color: navajowhite;
-  grid-area: n;
-}
-.nav a{
-  text-decoration: none;
-  color: red;
-}
-.content{
-  background-color: burlywood;
-  grid-area: c;
-}
-.content img {
-  width: 100%;
-}
+
