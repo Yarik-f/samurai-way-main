@@ -1,5 +1,4 @@
 import React from 'react';
-import './post/Post.css'
 import Post from "./post/Post";
 
 const data = [

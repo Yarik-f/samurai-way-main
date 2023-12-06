@@ -1,5 +1,5 @@
 import React from 'react';
-import './Post.css'
+import s from './Post.module.css'
 
 type PostPropsType = {
     src: string
@@ -8,14 +8,16 @@ type PostPropsType = {
 
 const Post = (props: PostPropsType) => {
 
+    const {src, title} = props
+
 
     return (
-        <div className={'post'}>
+        <div className={s.post}>
             <img
-                src={props.src}
+                src={src}
                 alt=""
             />
-            {props.title}
+            {title}
             <div>
                 <span>Like</span>
             </div>

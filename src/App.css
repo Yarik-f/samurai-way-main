@@ -12,3 +12,12 @@
 }
 
 
+.content{
+  background-color: burlywood;
+  grid-area: c;
+}
+.content img {
+  width: 100%;
+  height: 50vh;
+
+}

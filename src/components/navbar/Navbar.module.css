@@ -4,5 +4,11 @@
 }
 .nav a{
     text-decoration: none;
-    color: red;
+    color: black;
+}
+a:hover{
+    color: white;
+}
+.active a{
+    color: #ff7f7f;
 }
