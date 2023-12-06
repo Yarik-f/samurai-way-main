@@ -1,24 +1,19 @@
 import React from 'react';
 import s from './Navbar.module.css'
-import {Link} from "react-router-dom";
+import {NavLink} from "react-router-dom";
+import {dataLink} from "../../data/data";
 export const Navbar = () => {
+
+
     return (
         <nav className={s.nav}>
-            <div>
-                <Link to={'/profile'}>Profile</Link>
-            </div>
-            <div className={s.active}>
-                <Link to={'/dialogs'}>Messages</Link>
-            </div>
-            <div>
-                <Link to={'/news'}>News</Link>
-            </div>
-            <div>
-                <Link to={'/music'}>Music</Link>
-            </div>
-            <div>
-                <Link to={'/settings'}>Settings</Link>
-            </div>
+            {dataLink.map(link => {
+                return(
+                    <div>
+                        <NavLink activeClassName={s.activeLink} to={link.path}>{link.title}</NavLink>
+                    </div>
+                )
+            })}
         </nav>
     );
 };

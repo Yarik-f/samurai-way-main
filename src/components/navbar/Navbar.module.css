@@ -9,6 +9,6 @@
 a:hover{
     color: white;
 }
-.active a{
+nav a.activeLink{
     color: #ff7f7f;
 }

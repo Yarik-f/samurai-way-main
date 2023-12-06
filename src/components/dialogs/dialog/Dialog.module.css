@@ -1,0 +1,13 @@
+.user{
+    margin-bottom: 20px;
+}
+.user a{
+    text-decoration: none;
+    color: black;
+}
+.user a.active{
+    color: blue;
+}
+a:hover{
+    color: blue;
+}
