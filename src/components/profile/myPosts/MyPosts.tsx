@@ -15,7 +15,7 @@ export const MyPosts = () => {
             </div>
             {dataPost.map((post) => {
                 return (
-                    <Post src={post.src} title={post.title}/>
+                    <Post src={post.src} title={post.title} likesCount={post.likesCount}/>
                 )
             })}
 

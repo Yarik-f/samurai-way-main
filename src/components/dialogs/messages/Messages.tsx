@@ -4,11 +4,12 @@ import {Route} from "react-router-dom";
 import {dataUserList} from "../../../data/data";
 
 export const Messages = () => {
+
     return (
         <div>
             {dataUserList.map(user => {
                 return (
-                    <Route path={user.path}>
+                    <Route path={'/dialogs' + user.path}>
                         {user.messages.map(m => {
                             return(
                                 <div className={s.message}>

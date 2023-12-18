@@ -4,11 +4,12 @@ import s from './Post.module.css'
 type PostPropsType = {
     src: string
     title: string
+    likesCount: number
 }
 
 const Post = (props: PostPropsType) => {
 
-    const {src, title} = props
+    const {src, title, likesCount} = props
 
 
     return (
@@ -20,6 +21,7 @@ const Post = (props: PostPropsType) => {
             {title}
             <div>
                 <span>Like</span>
+                <span>{likesCount}</span>
             </div>
         </div>
     );

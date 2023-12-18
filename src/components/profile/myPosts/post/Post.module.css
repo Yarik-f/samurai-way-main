@@ -9,3 +9,6 @@
     margin-bottom: 10px;
     border-radius: 75px;
 }
+.post span:first-child{
+    margin-right: 10px;
+}
